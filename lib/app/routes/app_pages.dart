@@ -8,6 +8,10 @@ import '../modules/checklist_item/bindings/checklist_item_binding.dart';
 import '../modules/checklist_item/views/checklist_item_view.dart';
 import '../modules/home/bindings/home_binding.dart';
 import '../modules/home/views/home_view.dart';
+import '../modules/register/bindings/register_binding.dart';
+import '../modules/register/views/register_view.dart';
+import '../modules/user/bindings/user_binding.dart';
+import '../modules/user/views/user_view.dart';
 
 part 'app_routes.dart';
 
@@ -36,6 +40,16 @@ class AppPages {
       name: _Paths.AUTH,
       page: () => const AuthView(),
       binding: AuthBinding(),
+    ),
+    GetPage(
+      name: _Paths.USER,
+      page: () => const UserView(),
+      binding: UserBinding(),
+    ),
+    GetPage(
+      name: _Paths.REGISTER,
+      page: () => const RegisterView(),
+      binding: RegisterBinding(),
     ),
   ];
 }

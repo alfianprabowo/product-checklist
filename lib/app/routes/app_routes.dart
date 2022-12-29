@@ -8,6 +8,8 @@ abstract class Routes {
   static const CHECKLIST_ITEM = _Paths.CHECKLIST_ITEM;
   static const LOGIN = _Paths.LOGIN;
   static const AUTH = _Paths.AUTH;
+  static const USER = _Paths.USER;
+  static const REGISTER = _Paths.REGISTER;
 }
 
 abstract class _Paths {
@@ -17,4 +19,6 @@ abstract class _Paths {
   static const CHECKLIST_ITEM = '/checklist-item';
   static const LOGIN = '/login';
   static const AUTH = '/auth';
+  static const USER = '/user';
+  static const REGISTER = '/register';
 }

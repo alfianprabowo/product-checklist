@@ -1,0 +1,10 @@
+{
+    "statusCode": 2000,
+    "message": "Proses save berhasil",
+    "errorMessage": null,
+    "data": {
+        "id": 1,
+        "name": "Laptop",
+        "itemCompletionStatus": false
+    }
+}
