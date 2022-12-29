@@ -2,7 +2,7 @@ class ChecklistItems {
   int? statusCode;
   String? message;
   String? errorMessage;
-  List<Data>? data;
+  List<ChecklistItems>? data;
 
   ChecklistItems({this.statusCode, this.message, this.errorMessage, this.data});
 
@@ -11,9 +11,9 @@ class ChecklistItems {
     message = json['message'];
     errorMessage = json['errorMessage'];
     if (json['data'] != null) {
-      data = <Data>[];
+      data = <ChecklistItems>[];
       json['data'].forEach((v) {
-        data!.add(new Data.fromJson(v));
+        data!.add(ChecklistItems.fromJson(v));
       });
     }
   }

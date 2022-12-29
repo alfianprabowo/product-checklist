@@ -1,8 +1,10 @@
+import 'package:product_checklist/app/modules/checklist/models/checklist.dart';
+
 class ChecklistResponse {
   int? statusCode;
   String? message;
   String? errorMessage;
-  List<Data>? data;
+  List<Checklist>? data;
 
   ChecklistResponse(
       {this.statusCode, this.message, this.errorMessage, this.data});
@@ -12,9 +14,9 @@ class ChecklistResponse {
     message = json['message'];
     errorMessage = json['errorMessage'];
     if (json['data'] != null) {
-      data = <Data>[];
+      data = <Checklist>[];
       json['data'].forEach((v) {
-        data!.add(new Data.fromJson(v));
+        data!.add(Checklist.fromJson(v));
       });
     }
   }
