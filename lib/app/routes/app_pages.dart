@@ -1,5 +1,11 @@
 import 'package:get/get.dart';
 
+import '../modules/auth/bindings/auth_binding.dart';
+import '../modules/auth/views/auth_view.dart';
+import '../modules/checklist/bindings/checklist_binding.dart';
+import '../modules/checklist/views/checklist_view.dart';
+import '../modules/checklist_item/bindings/checklist_item_binding.dart';
+import '../modules/checklist_item/views/checklist_item_view.dart';
 import '../modules/home/bindings/home_binding.dart';
 import '../modules/home/views/home_view.dart';
 
@@ -15,6 +21,21 @@ class AppPages {
       name: _Paths.HOME,
       page: () => const HomeView(),
       binding: HomeBinding(),
+    ),
+    GetPage(
+      name: _Paths.CHECKLIST,
+      page: () => const ChecklistView(),
+      binding: ChecklistBinding(),
+    ),
+    GetPage(
+      name: _Paths.CHECKLIST_ITEM,
+      page: () => const ChecklistItemView(),
+      binding: ChecklistItemBinding(),
+    ),
+    GetPage(
+      name: _Paths.AUTH,
+      page: () => const AuthView(),
+      binding: AuthBinding(),
     ),
   ];
 }
